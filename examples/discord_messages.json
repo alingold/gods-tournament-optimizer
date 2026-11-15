@@ -1,0 +1,20 @@
+{
+  "description": "Entirely synthetic demonstration data; not real players or match results.",
+  "messages": [
+    {
+      "id": "chat-messages-999999999999999999-1",
+      "datetime": "2026-01-01T20:00:00Z",
+      "text": "Match Results for Round 1, Group 1, Game 1 of sunday tournaments\nTeam A: Placement 1\nDemoPlayer1 Kills: 2 Damage: 400 Revives: 1 Deaths: 2 Damage Taken: 500\nDemoPlayer2 Kills: 3 Damage: 500 Revives: 0 Deaths: 2 Damage Taken: 500\nDemoPlayer3 Kills: 4 Damage: 600 Revives: 1 Deaths: 2 Damage Taken: 500\nTeam Totals Kills: 9 Damage: 1500 Revives: 2 Deaths: 6 Damage Taken: 1500\nTeam B: Placement 2\nDemoPlayer4 Kills: 1 Damage: 300 Revives: 0 Deaths: 2 Damage Taken: 500\nDemoPlayer5 Kills: 2 Damage: 400 Revives: 1 Deaths: 2 Damage Taken: 500\nDemoPlayer6 Kills: 3 Damage: 500 Revives: 0 Deaths: 2 Damage Taken: 500\nTeam Totals Kills: 6 Damage: 1200 Revives: 1 Deaths: 6 Damage Taken: 1500"
+    },
+    {
+      "id": "chat-messages-999999999999999999-2",
+      "datetime": "2026-01-02T20:00:00Z",
+      "text": "Match Results for Round 1, Group 1, Game 2 of sunday tournaments\nTeam A: Placement 2\nDemoPlayer1 Kills: 3 Damage: 500 Revives: 0 Deaths: 2 Damage Taken: 500\nDemoPlayer2 Kills: 4 Damage: 600 Revives: 1 Deaths: 2 Damage Taken: 500\nDemoPlayer3 Kills: 1 Damage: 300 Revives: 0 Deaths: 2 Damage Taken: 500\nTeam Totals Kills: 8 Damage: 1400 Revives: 1 Deaths: 6 Damage Taken: 1500\nTeam B: Placement 1\nDemoPlayer4 Kills: 2 Damage: 400 Revives: 1 Deaths: 2 Damage Taken: 500\nDemoPlayer5 Kills: 3 Damage: 500 Revives: 0 Deaths: 2 Damage Taken: 500\nDemoPlayer6 Kills: 4 Damage: 600 Revives: 1 Deaths: 2 Damage Taken: 500\nTeam Totals Kills: 9 Damage: 1500 Revives: 2 Deaths: 6 Damage Taken: 1500"
+    },
+    {
+      "id": "chat-messages-999999999999999999-3",
+      "datetime": "2026-01-03T20:00:00Z",
+      "text": "Match Results for Round 1, Group 1, Game 3 of sunday tournaments\nTeam A: Placement 1\nDemoPlayer1 Kills: 4 Damage: 600 Revives: 1 Deaths: 2 Damage Taken: 500\nDemoPlayer2 Kills: 1 Damage: 300 Revives: 0 Deaths: 2 Damage Taken: 500\nDemoPlayer3 Kills: 2 Damage: 400 Revives: 1 Deaths: 2 Damage Taken: 500\nTeam Totals Kills: 7 Damage: 1300 Revives: 2 Deaths: 6 Damage Taken: 1500\nTeam B: Placement 2\nDemoPlayer4 Kills: 3 Damage: 500 Revives: 0 Deaths: 2 Damage Taken: 500\nDemoPlayer5 Kills: 4 Damage: 600 Revives: 1 Deaths: 2 Damage Taken: 500\nDemoPlayer6 Kills: 1 Damage: 300 Revives: 0 Deaths: 2 Damage Taken: 500\nTeam Totals Kills: 8 Damage: 1400 Revives: 1 Deaths: 6 Damage Taken: 1500"
+    }
+  ]
+}

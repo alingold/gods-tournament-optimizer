@@ -1,0 +1,7 @@
+# Synthetic demonstration roster
+DemoPlayer1
+DemoPlayer2
+DemoPlayer3
+DemoPlayer4
+DemoPlayer5
+DemoPlayer6

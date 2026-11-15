@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+*.bak
+node_modules/
+/raw/
+/rosters/
+/outputs/
+/work/
+*.log
+.DS_Store
