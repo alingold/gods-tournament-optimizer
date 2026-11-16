@@ -9,7 +9,7 @@ This public release contains the current November 14, 2026 optimizer, including 
 Use Python 3.10 or newer. The optimizer uses the standard library. On systems without an IANA time-zone database (commonly Windows), install it with `python -m pip install tzdata`.
 
 ```bash
-git clone https://github.com/theMenonlab/gods-tournament-optimizer.git
+git clone https://github.com/alingold/gods-tournament-optimizer.git
 cd gods-tournament-optimizer
 python tournament.py build --raw examples/discord_messages.json --output-dir outputs
 python tournament.py optimize --players-file examples/roster.txt --output outputs/teams.csv
