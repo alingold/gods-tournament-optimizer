@@ -6,7 +6,9 @@ venv/
 .env.*
 *.bak
 node_modules/
-/raw/
+/raw/*
+!/raw/discord_messages.json
+!/raw/alias_overrides.csv
 /rosters/
 /outputs/
 /work/
