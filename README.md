@@ -51,6 +51,10 @@ The two-team objective minimizes differences in summed overall, attack, support,
 
 Two-team splits are exhaustive when the number of combinations fits the configured limit. Larger searches and multi-team balancing use deterministic multi-start swap search. Multi-team balancing minimizes component ranges. Ratings and search objectives do not guarantee balanced live outcomes or model teammate chemistry. The generated backtest leaves out each event date but can train on later dates; it is retrospective, not forecast accuracy. The synthetic example demonstrates operation, not predictive performance.
 
+## Discord bot
+
+`gods_bot.py` runs the same optimizer from inside the GODS server. It saves `stat-bot` result posts as they arrive, and organizers get teams by right-clicking a roster message and choosing **Apps → Optimize teams**. It needs `discord.py` and an always-on host; see [BOT_SETUP.md](BOT_SETUP.md). The bot has been tested offline against the archive and has not yet run in the live server.
+
 ## Tests
 
 ```bash

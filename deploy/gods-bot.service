@@ -1,0 +1,15 @@
+[Unit]
+Description=GODS team bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=gods
+WorkingDirectory=/home/gods/gods-tournament-optimizer
+EnvironmentFile=/home/gods/gods-bot.env
+ExecStart=/home/gods/gods-tournament-optimizer/.venv/bin/python gods_bot.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
