@@ -70,17 +70,37 @@ class GodsBot(discord.Client):
         self.work = asyncio.Lock()          # one archive/ratings operation at a time
         self.import_task: asyncio.Task | None = None
         self.caught_up = False
+        self.commands_synced = False
         self.last_error: str | None = None
 
     async def setup_hook(self) -> None:
         self.tree.copy_global_to(guild=GUILD)
-        await self.tree.sync(guild=GUILD)
+
+    async def sync_commands(self) -> None:
+        """Register the commands once the bot is a member of the server."""
+        if self.commands_synced:
+            return
+        if self.get_guild(GUILD_ID) is None:
+            log.warning("Not in server %s yet; waiting to be added.", GUILD_ID)
+            return
+        try:
+            await self.tree.sync(guild=GUILD)
+            self.commands_synced = True
+            log.info("Commands registered in server %s", GUILD_ID)
+        except discord.DiscordException as error:
+            self.last_error = f"Could not register commands: {error}"
+            log.warning(self.last_error)
 
     async def on_ready(self) -> None:
         log.info("Connected as %s", self.user)
-        if not self.caught_up:
+        await self.sync_commands()
+        if self.commands_synced and not self.caught_up:
             self.caught_up = True
             await self.catch_up()
+
+    async def on_guild_join(self, guild: discord.Guild) -> None:
+        if guild.id == GUILD_ID:
+            await self.on_ready()
 
     async def on_message(self, message: discord.Message) -> None:
         if is_result_post(message):
